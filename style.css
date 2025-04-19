@@ -1,0 +1,62 @@
+body {
+    background: url('img/bg.gif') no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.clock-container {
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.clock {
+    font-size: clamp(1.5rem, 6vw, 2.5rem); /* biar responsif */
+    font-weight: 900;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f8f9fa;
+}
+
+.task-checkbox {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.task-text {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+    color: gray;
+}
